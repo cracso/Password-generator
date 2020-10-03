@@ -32,9 +32,9 @@ function generatePassword() {
     // First if statement for user validation 
     if (!enter) {
         alert("This needs a value");
-    } else if (enter < 8 || enter > 100) {
+    } else if (enter < 8 || enter > 128) {
         
-        enter = parseInt(prompt("Minimum 8 characters , Maximum 100"));
+        enter = parseInt(prompt("Minimum 8 characters , Maximum 128"));
 
     } else {
         confirmNumberEl = confirm("Will this contain Numbers?");
